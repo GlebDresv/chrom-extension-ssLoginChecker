@@ -26,10 +26,10 @@ function checkLogined(){
 			if ( JSON.parse(xhr.responseText).data === 'LOGIN_DEACTIVATE' ){
 				alert("Нажми кнопку вернуться!!\n...или временно отключи плагин нажав на его иконку...\n...не забудь потом включить (нажать иконку плагина еще раз)...");
 			};
-			console.log(xhr.responseText);
-			active = true;
-			timerId = setTimeout(checkLogined, 300*1000);
+			//console.log(xhr.responseText);
 		};
+		active = true;
+		timerId = setTimeout(checkLogined, 300*1000);
     };
 
 	xhr.open("GET", 'https://office.seo-studio.ua/test/vladsokolenko/StormAPI/Api.php', true);
