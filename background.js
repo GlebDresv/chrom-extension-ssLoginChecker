@@ -1,5 +1,3 @@
-
-var iterator=0;
 var timerId;
 var active;
 
