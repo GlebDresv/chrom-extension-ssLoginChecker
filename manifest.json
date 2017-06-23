@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "seo-studio logIn checker",
+  "description": "This extension check if you are logined in seo-studio panel",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "https://office.seo-studio.ua/",
+    "http://office.seo-studio.ua/"
+  ]
+}
